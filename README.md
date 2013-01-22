@@ -1,8 +1,9 @@
 # SimpleDateFix
 
 Fixes for date queries using AWS::Record::Model.  This gem is based on
-work done by (daniel-nelson)[https://github.com/daniel-nelson] in (this
-pull request to the 'aws-sdk' gem.)[https://github.com/aws/aws-sdk-ruby/pull/22]
+work done by [daniel-nelson](https://github.com/daniel-nelson) in [this
+pull request to the 'aws-sdk'
+gem.](https://github.com/aws/aws-sdk-ruby/pull/22)
 Thanks, Daniel!
 
 ## Installation

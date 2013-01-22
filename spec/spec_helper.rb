@@ -7,6 +7,8 @@
 #
 require 'aws-sdk'
 require 'support/aws_init'
+require 'active_support/core_ext/numeric/time'
+require 'active_support/core_ext/date_time/calculations'
 
 require "#{File.dirname(__FILE__)}/../lib/simple_date_fix"
 

@@ -8,12 +8,17 @@ Gem::Specification.new do |gem|
   gem.version       = SimpleDateFix::VERSION
   gem.authors       = ["Jeremy Green"]
   gem.email         = ["jeremy@octolabs.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Fixes for date queries in AWS::Record}
+  gem.summary       = %q{Fixes for date queries in AWS::Record}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+
+   gem.add_dependency "aws-sdk", "~> 1.8.0"
+   gem.add_dependency "active_support", "~> 3.0.0"
+   gem.add_development_dependency "rspec", ">= 2.0.0"
+
 end

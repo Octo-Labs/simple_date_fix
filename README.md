@@ -1,6 +1,9 @@
 # SimpleDateFix
 
-TODO: Write a gem description
+Fixes for date queries using AWS::Record::Model.  This gem is based on
+work done by (daniel-nelson)[https://github.com/daniel-nelson] in (this
+pull request to the 'aws-sdk' gem.)[https://github.com/aws/aws-sdk-ruby/pull/22]
+Thanks, Daniel!
 
 ## Installation
 
@@ -18,7 +21,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Now you can query your `datetime_attr`s.
+
+```ruby
+class Event < AWS::Record::Model
+  datetime_attr :timestamp
+end
+
+e = Event.create!(:timestamp => Time.now - 6.hours)
+
+Event.where("timestamp > ?",Time.now - 7.hours).first
+# => e
+
+Event.where("timestamp > ?",Time.now - 5.hours).first
+# => nil
+```
 
 ## Contributing
 

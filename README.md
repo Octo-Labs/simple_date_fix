@@ -6,6 +6,10 @@ pull request to the 'aws-sdk'
 gem.](https://github.com/aws/aws-sdk-ruby/pull/22)
 Thanks, Daniel!
 
+[![Gem Version](https://badge.fury.io/rb/simple_date_fix.png)](http://badge.fury.io/rb/simple_date_fix)
+[![Code Climate](https://codeclimate.com/repos/52f5dae1e30ba05af00073db/badges/0cbab73007c3a46a3413/gpa.png)](https://codeclimate.com/repos/52f5dae1e30ba05af00073db/feed)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
